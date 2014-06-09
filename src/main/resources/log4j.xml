@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Appenders -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p [%d{dd/MM/yyyy HH:mm:ss}] [%t] %c{2}:%L - %m%n" />
+        </layout>
+    </appender>
+    <logger name="org.springframework">
+        <level value="warn" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.springframework.test">
+        <level value="debug" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.springframework.batch">
+        <level value="debug" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.springframework.jdbc">
+        <level value="info" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.springframework.beans">
+        <level value="info" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.springframework.context">
+        <level value="info" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+	<logger name="org.springframework.aop">
+        <level value="info" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+	<logger name="org.springframework.transaction">
+        <level value="info" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="br.com.pernambucanas">
+        <level value="debug" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+</log4j:configuration>
