@@ -1,4 +1,4 @@
-package br.com.pernambucanas.web;
+package br.com.demo.web;
 
 import java.io.IOException;
 

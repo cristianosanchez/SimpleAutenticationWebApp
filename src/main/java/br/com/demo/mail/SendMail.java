@@ -1,4 +1,4 @@
-package br.com.pernambucanas.mail;
+package br.com.demo.mail;
 
 import java.util.*;
 import java.io.*;

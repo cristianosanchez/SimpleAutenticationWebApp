@@ -41,7 +41,7 @@
         <level value="info" />
         <appender-ref ref="CONSOLE" />
     </logger>
-    <logger name="br.com.pernambucanas">
+    <logger name="br.com.demo">
         <level value="debug" />
         <appender-ref ref="CONSOLE" />
     </logger>
