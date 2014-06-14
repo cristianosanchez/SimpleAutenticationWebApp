@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Crédito e Cobrança</title>
+</h:head>
+<h:body>
+	<h3>Acordo de Negociação de Dívida</h3>
+	<f:metadata>
+	    <f:viewParam name="m" value="#{helloBean.base64Message}" required="true" />
+	    <f:event type="preRenderView" listener="#{helloBean.execute}" />
+	</f:metadata>
+	<h:form>
+		<h:outputText value="#{msg.welcomeMessage}" />
+                <br/>
+                Original message: <h:outputText value="#{helloBean.base64Message}" />
+                <br/>
+                Parameters: <h:outputText value="#{helloBean.message}" />
+	</h:form>
+</h:body>
+</html>
